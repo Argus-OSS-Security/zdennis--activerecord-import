@@ -1,9 +1,10 @@
 name: Test
-on:
-  # Pull requests are tested by the pull_request event, so only run on pushes to master
-  push:
-    branches: [master]
-  pull_request:
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   # Pull requests are tested by the pull_request event, so only run on pushes to master
+#   push:
+#     branches: [master]
+#   pull_request:
 jobs:
   test:
     services:
